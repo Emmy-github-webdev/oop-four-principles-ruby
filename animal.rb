@@ -20,6 +20,13 @@ class Animal
     @number_of_legs
   end
 
+  def speak
+    if @type == "dog"
+      "Woof, woof"
+    elsif @type == "spider"
+      "..."
+    end
+  end
 end
 
 animal_1 = Animal.new("dog", 4, "Rex")
@@ -42,3 +49,7 @@ puts animal_2.id
 puts animal_2.type
 puts animal_2.name
 puts animal_2.number_of_legs
+
+puts animal_1.speak()
+puts animal_2.speak()
+
