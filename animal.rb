@@ -53,9 +53,3 @@ puts animal_2.number_of_legs
 puts animal_1.speak()
 puts animal_2.speak()
 
-# puts animal_1.bring_a_stick()
-# puts animal_2.bring_a_stick()
-
-# puts animal_1.make_a_web()
-# puts animal_2.make_a_web()
-

@@ -1,6 +1,6 @@
 require "./animal.rb"
 
-class spider
+class Spider < Animal
   def initialize(web_strength_level, name = "Unkown")
     super("spider", 8, name)
     @web_strength_level = web_strength_level
@@ -12,3 +12,6 @@ class spider
     end
   end
 end
+
+animal_2 = Spider.new(80, "Wilma")
+puts animal_2.make_a_web()
