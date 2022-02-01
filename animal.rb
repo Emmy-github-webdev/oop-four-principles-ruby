@@ -27,12 +27,6 @@ class Animal
       "..."
     end
   end
-
-  # def make_a_web
-  #   if @type == "spider"
-  #     "www"
-  #   end
-  # end
 end
 
 animal_1 = Animal.new("dog", 4, "Rex")
