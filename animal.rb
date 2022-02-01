@@ -1,4 +1,5 @@
 require "./remover"
+require "./foods"
 
 class Animal
   attr_accessor :name #create both setter and getter for name
@@ -7,6 +8,7 @@ class Animal
     @name = name
     @number_of_legs = number_of_legs
     @type = type
+    @liked_food = NoFood.new()
   end
 
   # Getter and Setter
@@ -26,12 +28,17 @@ class Animal
     remover = Remover.new()
     @number_of_legs = remover.decrease(@number_of_legs)
   end
+
   def speak
     if @type == "dog"
       "Woof, woof"
     elsif @type == "spider"
       "..."
     end
+  end
+
+  def likes_food?(food)
+    @liked_food.is_liked?(food)
   end
 end
 
