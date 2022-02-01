@@ -15,3 +15,5 @@ end
 
 animal_2 = Spider.new(80, "Wilma")
 puts animal_2.make_a_web()
+animal_2.remove_leg()
+puts animal_2.number_of_legs

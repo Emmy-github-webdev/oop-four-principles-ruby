@@ -15,3 +15,5 @@ end
 
 animal_1 = Dog.new("Black", "Rex")
 puts animal_1.bring_a_stick()
+animal_1.remove_leg()
+puts animal_1.number_of_legs
