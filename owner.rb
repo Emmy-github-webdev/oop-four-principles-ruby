@@ -1,7 +1,3 @@
-require "./animal.rb"
-require "./dog.rb"
-require "./spider.rb"
-
 class Owner
   attr_accessor :name
   attr_reader :animals
@@ -11,8 +7,12 @@ class Owner
     @animals = []
   end
 
-  def add_animals(animal)
+  def add_animal(animal)
     @animals.push(animal)
+    animal.owner = self
   end
 end
+
+alex = Owner.new("Alex")
+alex.animals
 
