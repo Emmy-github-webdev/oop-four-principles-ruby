@@ -1,5 +1,5 @@
-require "./remover"
-require "./foods"
+require "./remover.rb"
+require "./foods.rb"
 
 class Animal
   attr_accessor :name #create both setter and getter for name
